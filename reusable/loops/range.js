@@ -11,7 +11,7 @@ function range(start, end) {
     array[item++] = i;
   }
 
-  console.log(array);
+  return array;
 }
 
-range(15, 30)
+console.log(range(15, 30))

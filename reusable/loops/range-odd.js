@@ -11,7 +11,7 @@ function rangeOdd(start, end) {
     if(i % 2 !== 0) array[item++] = i;
   }
   
-  console.log(array)
+  return array;
 }
 
-rangeOdd(15, 30)
+console.log(rangeOdd(15, 30))
