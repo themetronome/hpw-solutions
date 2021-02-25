@@ -1,5 +1,5 @@
 function average(a, b) {
-  console.log((a + b) / 2); 
+  return (a + b) / 2;
 }
 
-average(10, 4)
+console.log(average(10, 4))

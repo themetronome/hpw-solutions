@@ -1,5 +1,5 @@
 function cube(x) {
-  console.log(Math.pow(x, 3))
+  return Math.pow(x, 3)
 }
 
-cube(3)
+console.log(cube(3))

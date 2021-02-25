@@ -1,15 +1,15 @@
 function helloFirst(name) {
-  console.log(`hello, ${name}!`);
+  return `hello, ${name}!`;
 }
 
 const helloSecond = function(name) {
-  console.log(`hello, ${name}!`);
+  return `hello, ${name}!`;
 };
 
 const helloThird = (name) => {
-  console.log(`hello, ${name}!`)
+  return `hello, ${name}!`
 };
 
-helloFirst('Kevin');
-helloSecond('James');
-helloThird('Kyrie');
+console.log(helloFirst('Kevin'))
+console.log(helloSecond('James'))
+console.log(helloThird('Kyrie'))
