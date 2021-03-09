@@ -5,20 +5,22 @@ const Point = class {
   }
 };
 
-const serializable = (Category) => class extends Category {
-  toString() {
-    return `[${this.x}, ${this.y}]`;
-  }
-};
+const serializable = (Category) =>
+  class extends Category {
+    toString() {
+      return `[${this.x}, ${this.y}]`;
+    }
+  };
 
-const movable = (Category) => class extends Category {
-  move(x, y) {
-    this.x += x;
-    this.y += y;
-  }
-};
+const movable = (Category) =>
+  class extends Category {
+    move(x, y) {
+      this.x += x;
+      this.y += y;
+    }
+  };
 
-// Usage
+// usage
 
 const PointEx = serializable(movable(Point));
 const point1 = new PointEx(10, 20);

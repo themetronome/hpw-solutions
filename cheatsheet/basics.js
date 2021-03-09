@@ -1,25 +1,25 @@
-// Constants
+// constants
 
-const SALUTATION = 'Ave';
+const SALUTATION = "Ave";
 
 const COLORS = [
-  /* 0 */ 'black',
-  /* 1 */ 'red',
-  /* 2 */ 'green',
-  /* 3 */ 'yellow',
-  /* 4 */ 'blue',
-  /* 5 */ 'magenta',
-  /* 6 */ 'cyan',
-  /* 7 */ 'white'
+  /* 0 */ "black",
+  /* 1 */ "red",
+  /* 2 */ "green",
+  /* 3 */ "yellow",
+  /* 4 */ "blue",
+  /* 5 */ "magenta",
+  /* 6 */ "cyan",
+  /* 7 */ "white",
 ];
 
-// Functions
+// functions
 
 const colorer = (s, color) => `\x1b[3${color}m${s}\x1b[0m`;
 
 const colorize = (name) => {
-  let res = '';
-  const letters = name.split('');
+  let res = "";
+  const letters = name.split("");
   let color = 0;
   for (const letter of letters) {
     res += colorer(letter, color++);
@@ -28,16 +28,15 @@ const colorize = (name) => {
   return res;
 };
 
-const greetings = (name) => (
-  name.includes('Augustus') ?
-    `${SALUTATION}, ${colorize(name)}!` :
-    `Hello, ${name}!`
-);
+const greetings = (name) =>
+  name.includes("Augustus")
+    ? `${SALUTATION}, ${colorize(name)}!`
+    : `Hello, ${name}!`;
 
-// Usage
+// usage
 
-const fullName = 'Marcus Aurelius Antoninus Augustus';
+const fullName = "Marcus Aurelius Antoninus Augustus";
 console.log(greetings(fullName));
 
-const shortName = 'Marcus Aurelius';
+const shortName = "Marcus Aurelius";
 console.log(greetings(shortName));

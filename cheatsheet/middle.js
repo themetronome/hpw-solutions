@@ -5,7 +5,7 @@ const adder = (initial = 0) => ({
     this.steps.push(value);
     this.value += value;
     return this;
-  }
+  },
 });
 
 const Adder = class {
@@ -21,7 +21,7 @@ const Adder = class {
   }
 };
 
-// Usage
+// usage
 
 {
   const { value, steps } = adder(5).add(-8).add(11);
