@@ -5,7 +5,7 @@ let timer = null;
 
 const event = () => {
   if (counter === MAX_VALUE) {
-    console.log('the end');
+    console.log("the end");
     clearInterval(timer);
     return;
   }
@@ -13,5 +13,5 @@ const event = () => {
   counter++;
 };
 
-console.log('begin');
+console.log("begin");
 timer = setInterval(event, INTERVAL);
