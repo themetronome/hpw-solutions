@@ -1,6 +1,6 @@
-const inc = x => ++x;
+const inc = (x) => ++x;
 
 const a = 5;
-const b = inc(a)
+const b = inc(a);
 
-console.dir({ a, b })
+console.dir({ a, b });

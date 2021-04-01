@@ -1,4 +1,4 @@
-const sum = new Function('a, b', 'return a + b');
+const sum = new Function("a, b", "return a + b");
 
 console.dir({
   name: sum.name,
