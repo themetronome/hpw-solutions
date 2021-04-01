@@ -1,17 +1,17 @@
-// Immediately-invoked function expression
+// immediately-invoked function expression
 
 (function f1() {
-  console.log('f1');
+  console.log("f1");
 })();
 
-(function() {
-  console.log('anonymous');
+(function () {
+  console.log("anonymous");
 })();
 
 (() => {
-  console.log('lambda');
+  console.log("lambda");
 })();
 
 {
-  console.log('block');
+  console.log("block");
 }

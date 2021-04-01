@@ -13,4 +13,4 @@ o.scalarVariable = 8;
 scalarVariable = 9;
 
 console.dir(o);
-console.dir(scalarVariable)
+console.dir(scalarVariable);
